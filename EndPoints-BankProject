@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "be28d6be-30f1-4e5a-9c39-08b174c905a4",
+		"name": "BankSystem Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "adminb@kinal.edu.gt",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "ADMINB123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGFmYjM4MDYxMmE5MTM3ZmE3MjFiODQiLCJuYW1lIjoiRWplbXBsbyIsImVtYWlsIjoiZWplbXBsb0Bjb3JyZW8uY29tIiwiaWF0IjoxNjg5MjM2NDAwLCJleHAiOjE2ODkyNTQ0MDB9.kDmWgz-2i9BH7SAl98CHJ8ixO3lkBdW9d0VMVQWSo58",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ejemplo",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "Ejemplo123",
+									"type": "default"
+								},
+								{
+									"key": "DPI",
+									"value": "0976109880101",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Mi casa de la esquina",
+									"type": "default"
+								},
+								{
+									"key": "cellphone",
+									"value": "12345678",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ejemplo@correo.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "workName",
+									"value": "VentaCarros",
+									"type": "default"
+								},
+								{
+									"key": "rol",
+									"value": "CLIENTE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGFmYjM4MDYxMmE5MTM3ZmE3MjFiODQiLCJuYW1lIjoiRWplbXBsbyIsImVtYWlsIjoiZWplbXBsb0Bjb3JyZW8uY29tIiwiaWF0IjoxNjg5MjM2NDAwLCJleHAiOjE2ODkyNTQ0MDB9.kDmWgz-2i9BH7SAl98CHJ8ixO3lkBdW9d0VMVQWSo58",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "EjemploEditado",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "UserEditado",
+									"type": "default"
+								},
+								{
+									"key": "DPI",
+									"value": "0976109880101",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Mi casa de la esquina Editado",
+									"type": "default"
+								},
+								{
+									"key": "cellphone",
+									"value": "09876543",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ejemploEditado@correo.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "workName",
+									"value": "VentaCarrosEditado",
+									"type": "default"
+								},
+								{
+									"key": "rol",
+									"value": "CLIENTE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/update-user/''idUser\"",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"update-user",
+								"''idUser\""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "No",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "tipo",
+									"value": "Monetaria",
+									"type": "default"
+								},
+								{
+									"key": "banco",
+									"value": "BAM",
+									"type": "default"
+								},
+								{
+									"key": "saldo",
+									"value": "5000",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/add-cuenta/64afc558a2dbf7297f864438",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"add-cuenta",
+								"64afc558a2dbf7297f864438"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2005/api/read-user",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"read-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListCuentas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGFmYTM1MzY1NzY4ZDg4Yzc2MGIxYjYiLCJuYW1lIjoiQURNSU5BUFAiLCJlbWFpbCI6ImFkbWluYkBraW5hbC5lZHUuZ3QiLCJpYXQiOjE2ODkyMzk1MTQsImV4cCI6MTY4OTI1NzUxNH0.4ENjq5Y0Pav9ZY-_UV58oRc6tlejzZDhHv6_-GFdecE",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2005/api/list-cuentas",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"list-cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGFmYTM1MzY1NzY4ZDg4Yzc2MGIxYjYiLCJuYW1lIjoiQURNSU5BUFAiLCJlbWFpbCI6ImFkbWluYkBraW5hbC5lZHUuZ3QiLCJpYXQiOjE2ODkyMzczODYsImV4cCI6MTY4OTI1NTM4Nn0.JveZsy25vy78VluDgZMOUVy87QDK5Ajk37klos0lILE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:2005/api/delete-user/64afb380612a9137fa721b84",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"delete-user",
+								"64afb380612a9137fa721b84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGFmYTM1MzY1NzY4ZDg4Yzc2MGIxYjYiLCJuYW1lIjoiQURNSU5BUFAiLCJlbWFpbCI6ImFkbWluYkBraW5hbC5lZHUuZ3QiLCJpYXQiOjE2ODkyMzczODYsImV4cCI6MTY4OTI1NTM4Nn0.JveZsy25vy78VluDgZMOUVy87QDK5Ajk37klos0lILE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:2005/api/delete-user/64afb380612a9137fa721b84",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"delete-user",
+								"64afb380612a9137fa721b84"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transfer",
+			"item": [
+				{
+					"name": "CreateTransfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:2005/api/create-transferencia/",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"create-transferencia",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorite",
+			"item": [
+				{
+					"name": "ListFavorite",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2005/api/list-favs",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"list-favs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddFavorite Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "alias",
+									"value": "PrimerFavorito",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "Monetaria",
+									"type": "default"
+								},
+								{
+									"key": "DPI",
+									"value": "0976109880101",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/add-fav/76391442561509850000",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"add-fav",
+								"76391442561509850000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteFavorite",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "alias",
+									"value": "PrimerFavorito",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "Monetaria",
+									"type": "default"
+								},
+								{
+									"key": "DPI",
+									"value": "0976109880101",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2005/api/delete-fav/",
+							"host": [
+								"localhost"
+							],
+							"port": "2005",
+							"path": [
+								"api",
+								"delete-fav",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
